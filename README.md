@@ -24,6 +24,11 @@ Most confusion between visually similar classes
 PR, F1, Precision, Recall curves available in `/results`  
 Confusion matrix visualized
 
+## Presentation
+
+The project presentation is available on [Canva]([https://www.canva.com/design/DAGopsSp9Fo/hXp6Wjo_Cd66MePSr-joJA/edit?utm_content=DAGopsSp9Fo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAGopsSp9Fo/hXp6Wjo_Cd66MePSr-joJA/view)
+
+
 ## Inference
 
 **Image prediction:**
