@@ -1,0 +1,13 @@
+train: C:\Users\Ki7\Yolo\tomates-10\train\images
+val: C:\Users\Ki7\Yolo\tomates-10\valid\images
+test: C:\Users\Ki7\Yolo\tomates-10\test\images
+
+nc: 5
+names: ['good_10_40', 'good_40_70', 'healthy', 'unripe', 'rotten']
+
+roboflow:
+  workspace: tomatoes-xvztd
+  project: tomates-cel5z
+  version: 10
+  license: Public Domain
+  url: https://universe.roboflow.com/tomatoes-xvztd/tomates-cel5z/dataset/10
