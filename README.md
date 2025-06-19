@@ -24,6 +24,18 @@ Most confusion between visually similar classes
 PR, F1, Precision, Recall curves available in `/results`  
 Confusion matrix visualized
 
+## Model Results
+
+### Detection on test image
+<img src="media/test_photo_with_boxes.jpg" alt="Tomato detection image" width="500"/>
+
+### Detection on video
+[Watch detection demo video](https://github.com/AnyKey-Nick/AI_Tomato_detection/blob/21589e0ef985df450d452139760fc72f92c772c3/media/test_video_with_boxes.mp4)
+
+### Performance metrics (PR, F1, Confusion Matrix)
+<img src="results/results.png" alt="Model metrics visualization" width="600"/>
+
+
 ## Presentation
 
 The project presentation is available on ([https://www.canva.com/design/DAGopsSp9Fo/hXp6Wjo_Cd66MePSr-joJA/edit?utm_content=DAGopsSp9Fo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAGopsSp9Fo/hXp6Wjo_Cd66MePSr-joJA/view)
