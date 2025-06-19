@@ -2,27 +2,42 @@
 AI-based tomato grading system.
 This project uses a YOLOv11.
 
-## Dataset
-Dataset: "Tomates Computer Vision Project" from Roboflow  
-Classes: `good_10_40`, `good_40_70`, `healthy`, `unripe`, `rotten`  
-Images: 1025 annotated samples  
-Split: train / valid / test
+## Installation
+```bash
+pip install -r requirements.txt
+```
 
-## Tools
+---
+
+## Dataset
+- Source: *"Tomates Computer Vision Project"* (Roboflow)  
+- Classes: `good_10_40`, `good_40_70`, `healthy`, `unripe`, `rotten`  
+- Size: 1025 annotated samples  
+- Split: train / valid / test
+
+---
+
+## Tools & Frameworks
 - Python, OpenCV, Pandas
-- YOLOv11 via Ultralytics
+- [Ultralytics YOLOv11](https://github.com/ultralytics/ultralytics)
 - Roboflow API
-- EasyOCR, PyTesseract (optional)
+- EasyOCR, PyTesseract *(optional)*
+
+---
 
 ## Model Training
-Trained on 100 epochs  
-Average mAP@0.5: **0.91**  
-Best precision: over 95% for `unripe` and `good_40_70`  
-Most confusion between visually similar classes
+- 100 training epochs  
+- Average **mAP@0.5**: `0.91`  
+- Best precision: over 95% for `unripe` and `good_40_70`  
+- Confusion mainly between visually similar classes
+
+---
 
 ## Evaluation
-PR, F1, Precision, Recall curves available in `/results`  
-Confusion matrix visualized
+- Curves: PR, F1, Precision, Recall — see `/results` folder  
+- Confusion matrix visualized
+
+---
 
 ## Model Results
 
@@ -30,20 +45,23 @@ Confusion matrix visualized
 <img src="media/test_photo_with_boxes.jpg" alt="Tomato detection image" width="500"/>
 
 ### Detection on video
-[Watch detection demo video](https://github.com/AnyKey-Nick/AI_Tomato_detection/blob/21589e0ef985df450d452139760fc72f92c772c3/media/test_video_with_boxes.mp4)
+[▶ Watch detection demo video](https://github.com/AnyKey-Nick/AI_Tomato_detection/blob/21589e0ef985df450d452139760fc72f92c772c3/media/test_video_with_boxes.mp4)
 
-### Performance metrics (PR, F1, Confusion Matrix)
+### Performance metrics
 <img src="results/results.png" alt="Model metrics visualization" width="600"/>
 
+---
 
 ## Presentation
 
-The project presentation is available on ([https://www.canva.com/design/DAGopsSp9Fo/hXp6Wjo_Cd66MePSr-joJA/edit?utm_content=DAGopsSp9Fo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAGopsSp9Fo/hXp6Wjo_Cd66MePSr-joJA/view)
+The project presentation is available on  
+[Canva](https://www.canva.com/design/DAGopsSp9Fo/hXp6Wjo_Cd66MePSr-joJA/view)
 
+---
 
 ## Inference
 
-**Image prediction:**
+**Single image prediction:**
 ```python
 from ultralytics import YOLO
 model = YOLO("best.pt")
@@ -52,11 +70,11 @@ results[0].show()
 ```
 
 **Video detection with object counting:**  
-Run `src/detect_from_video.py`
-
-## Install
+Run:
 ```bash
-pip install -r requirements.txt
+python src/detect_from_video.py
 ```
+---
+
 
 
