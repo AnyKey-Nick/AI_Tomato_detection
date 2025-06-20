@@ -21,7 +21,7 @@ pip install -r requirements.txt
 - Python, OpenCV, Pandas
 - [Ultralytics YOLOv11](https://github.com/ultralytics/ultralytics)
 - Roboflow API
-- EasyOCR, PyTesseract *(optional)*
+- EasyOCR, PyTesseract
 
 ---
 
